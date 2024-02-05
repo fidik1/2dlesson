@@ -46,7 +46,6 @@ public class Enemy : MonoBehaviour
         }
         if (Vector2.Distance(transform.position, target.position) >= 1.1f)
             transform.position = new(Mathf.Lerp(transform.position.x, target.position.x, Time.deltaTime), transform.position.y);
-        print(Vector2.Distance(transform.position, target.position));
     }
 
     private void Knockback()
